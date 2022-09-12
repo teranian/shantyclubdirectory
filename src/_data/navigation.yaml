@@ -1,0 +1,8 @@
+---
+items:
+  - text: Clubs
+    url: "/clubs"
+  - text: Songs
+    url: "/songs"
+  - text: Admin
+    url: "/admin"

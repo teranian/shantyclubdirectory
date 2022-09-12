@@ -1,7 +1,5 @@
-# Canberra Pickers & Fiddlers tune book
-A project to create an interactive PDF document of sheet music for the Canberra Pickers &amp; Fiddlers old time music session. 
-
-Tunes are created in ABC notation (https://abcnotation.com/)
+# Shanty Club Directory
+A directory listing of all Sea Shanty Clubs in Australia
 
 The static HTML site is based on the [https://neat-starter.netlify.app/](https://neat-starter.netlify.app/) by Surjith S M ( [@surjithctly](https://surjithctly.in/) )
 
@@ -18,10 +16,10 @@ In order to make changes to the structure of the static site, you can setup a lo
 
 ``` bash
 # 1. Clone this Repository
-git clone https://github.com/teranian/pickersandfiddlers
+git clone https://github.com/teranian/shantyclubdirectory
 
 # 2. Navigate to the directory
-cd pickersandfiddlers/
+cd shantyclubdirectory/
 
 # 3. Install dependencies
 npm install

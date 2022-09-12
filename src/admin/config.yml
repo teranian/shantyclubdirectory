@@ -30,7 +30,33 @@ collections:
         multiple: true
         create: true
         options: ["Tags", "created", "from", "config.yml"]
-  - label: "Settings"
+
+  - label: "Clubs"
+    name: "clubs"
+    folder: "src/clubs"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Location", name: "dropdown", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - widget: select
+        label: "tags"
+        name: "tags"
+        multiple: true
+        create: true
+        options: ["Tags", "created", "from", "config.yml"]
+      - widget: select
+        label: "location"
+        name: "location"
+        multiple: true
+        create: true
+        options: ["ACT", "NSW", "VIC", "QLD", "SA", "WA", "TAS", "NT", "NZ"]
+        
     name: "settings"
     editor:
       preview: false

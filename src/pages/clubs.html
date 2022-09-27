@@ -1,0 +1,26 @@
+---
+layout: default
+permalink: /clubs/
+---
+
+<section class="mt-15">
+    <p class="subtitle my-10 ">Select a Club to view details</p>
+
+    <div class="columns-2">
+
+        {% for clubs in collections.clubs %}
+
+            <p class=" text-2xl text-gray-900 mb-3">
+                <a href="{{ clubs.url | url }}">
+                    {% if clubs.data.title %}
+                        {{ clubs.data.title }}
+                    {% else %}
+                            Untitled
+                        {% endif %}
+                    <span>({{ clubs.data.state }})</span>
+                </a>
+            </p>
+
+        {% endfor %}
+    </div>
+</section> 

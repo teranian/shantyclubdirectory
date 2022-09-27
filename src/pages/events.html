@@ -1,0 +1,26 @@
+---
+layout: default
+permalink: /events/
+---
+
+<section class="mt-15">
+    <p class="subtitle my-10 ">Select a Club to view details</p>
+
+    <div class="columns-2">
+
+        {% for events in collections.events %}
+
+            <p class=" text-2xl text-gray-900 mb-3">
+                <a href="{{ events.url | url }}">
+                    {% if events.data.title %}
+                        {{ events.data.title }}
+                    {% else %}
+                            Untitled
+                        {% endif %}
+                    <span>({{ events.data.state }})</span>
+                </a>
+            </p>
+
+        {% endfor %}
+    </div>
+</section> 

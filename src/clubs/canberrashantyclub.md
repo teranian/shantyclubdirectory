@@ -5,10 +5,9 @@ description: Capitalize on low hanging fruit to identify a ballpark value added
   clickthroughs from DevOps.
 author: Ewan Lawrie
 date: 2020-09-01
-tags:
-  - left
-  - center
-  - right
+location: Canberra, ACT
+state:
+  - ACT
 ---
 Sessions held on the 2nd and 4th Wednesdays of the month at Smiths Alternative in the city. 
 

@@ -4,7 +4,7 @@ backend:
   branch: master
   ### enable below lines for github integration ###
   # name: github
-  # repo: surjithctly/neat-starter
+  # repo: teranian/shantyclubdirectory
 media_folder: "src/static/img"
 public_folder: "/static/img"
 
@@ -30,7 +30,6 @@ collections:
         multiple: true
         create: true
         options: ["Tags", "created", "from", "config.yml"]
-
   - label: "Clubs"
     name: "clubs"
     folder: "src/clubs"
@@ -45,18 +44,17 @@ collections:
       - { label: "Location", name: "dropdown", widget: "markdown" }
       - { label: "Body", name: "body", widget: "markdown" }
       - widget: select
-        label: "tags"
-        name: "tags"
-        multiple: true
-        create: true
-        options: ["Tags", "created", "from", "config.yml"]
-      - widget: select
         label: "location"
         name: "location"
         multiple: true
         create: true
         options: ["ACT", "NSW", "VIC", "QLD", "SA", "WA", "TAS", "NT", "NZ"]
-        
+      - widget: select
+        label: "tags"
+        name: "tags"
+        multiple: true
+        create: true
+        options: ["Tags", "created", "from", "config.yml"]
     name: "settings"
     editor:
       preview: false

@@ -72,19 +72,6 @@
     </div>
 
     <div class="mb-5">
-    <h2 class="font-bold text-3xl mb-6">SA</h2>
-        {% for club in collections.club %}
-            {% if club.data.tags.includes("SA") %}
-                <p class=" text-2xl text-gray-900 ">
-                    <a href="{{ club.url | url }}">
-                        {{ club.data.title }}
-                    </a>
-                </p>
-            {% endif %}
-        {% endfor %}
-    </div>
-
-    <div class="mb-5">
     <h2 class="font-bold text-3xl mb-6">TAS</h2>
         {% for club in collections.club %}
             {% if club.data.tags.includes("TAS") %}

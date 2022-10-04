@@ -1,15 +1,14 @@
 
-<section class="mt-15">
-    <p class="subtitle my-10 ">Select a Club to view details</p>
+<section class="">
 
     {% set postslist = collections.wordspictures | every("red", "house") %}
 
 
+    <div class="">
     <h2 class="font-bold text-3xl mb-6">ACT</h2>
-    <div class="columns-2">
         {% for club in collections.club %}
             {% if club.data.tags.includes("ACT") %}
-                <p class=" text-2xl text-gray-900 mb-3">
+                <p class=" text-2xl text-gray-900">
                     <a href="{{ club.url | url }}">
                         {{ club.data.title }}
                     </a>
@@ -19,12 +18,12 @@
     </div>
 
 
+    <div class="mb-6">
     <h2 class="font-bold text-3xl mb-6">NSW</h2>
-    <div class="columns-2">
         {% for club in collections.club %}
             {% if club.data.tags.includes("NSW") %}
-                <p class=" text-2xl text-gray-900 mb-3">
-                    <a href="{{ club.website | url }}">
+                <p class=" text-2xl text-gray-900 ">
+                    <a href="{{ club.url | url }}">
                         {{ club.data.title }}
                     </a>
                 </p>
@@ -32,12 +31,13 @@
         {% endfor %}
     </div>
 
+    
+    <div class="mb-5">
     <h2 class="font-bold text-3xl mb-6">VIC</h2>
-    <div class="columns-2">
         {% for club in collections.club %}
             {% if club.data.tags.includes("VIC") %}
-                <p class=" text-2xl text-gray-900 mb-3">
-                    <a href="{{ club.website | url }}">
+                <p class=" text-2xl text-gray-900 ">
+                    <a href="{{ club.url | url }}">
                         {{ club.data.title }}
                     </a>
                 </p>
@@ -45,5 +45,56 @@
         {% endfor %}
     </div>
 
+    <div class="mb-5">
+    <h2 class="font-bold text-3xl mb-6">WA</h2>
+        {% for club in collections.club %}
+            {% if club.data.tags.includes("WA") %}
+                <p class=" text-2xl text-gray-900 ">
+                    <a href="{{ club.url | url }}">
+                        {{ club.data.title }}
+                    </a>
+                </p>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <div class="mb-5">
+    <h2 class="font-bold text-3xl mb-6">QLD</h2>
+        {% for club in collections.club %}
+            {% if club.data.tags.includes("QLD") %}
+                <p class=" text-2xl text-gray-900 ">
+                    <a href="{{ club.url | url }}">
+                        {{ club.data.title }}
+                    </a>
+                </p>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <div class="mb-5">
+    <h2 class="font-bold text-3xl mb-6">SA</h2>
+        {% for club in collections.club %}
+            {% if club.data.tags.includes("SA") %}
+                <p class=" text-2xl text-gray-900 ">
+                    <a href="{{ club.url | url }}">
+                        {{ club.data.title }}
+                    </a>
+                </p>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <div class="mb-5">
+    <h2 class="font-bold text-3xl mb-6">TAS</h2>
+        {% for club in collections.club %}
+            {% if club.data.tags.includes("TAS") %}
+                <p class=" text-2xl text-gray-900 ">
+                    <a href="{{ club.url | url }}">
+                        {{ club.data.title }}
+                    </a>
+                </p>
+            {% endif %}
+        {% endfor %}
+    </div>
 </section> 
 

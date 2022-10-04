@@ -1,5 +1,5 @@
 ---
-title: Forty Degrees South
+title: Forty Degrees South (Band)
 description: Forty Degrees South is a Sydney based folk group renowned for the
   powerful impact they make singing
 website: https://www.facebook.com/Roaring.Forties/

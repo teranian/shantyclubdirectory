@@ -53,6 +53,12 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
+  // this sorts a Collection descending by Title A > Z
+  eleventyConfig.addFilter('sortByTitle', values => {
+    return values.slice().sort((a, b) => a.data.title.localeCompare(b.data.title))
+  })
+    
+
   // Clubs by state category filter
   eleventyConfig.addFilter("every", function (items = [], ...tags) {
     return items.filter(item => tags.every(tag => item.data.tags.includes(tag)));

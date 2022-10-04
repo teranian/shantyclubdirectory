@@ -1,0 +1,49 @@
+
+<section class="mt-15">
+    <p class="subtitle my-10 ">Select a Club to view details</p>
+
+    {% set postslist = collections.wordspictures | every("red", "house") %}
+
+
+    <h2 class="font-bold text-3xl mb-6">ACT</h2>
+    <div class="columns-2">
+        {% for club in collections.club %}
+            {% if club.data.tags.includes("ACT") %}
+                <p class=" text-2xl text-gray-900 mb-3">
+                    <a href="{{ club.url | url }}">
+                        {{ club.data.title }}
+                    </a>
+                </p>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+
+    <h2 class="font-bold text-3xl mb-6">NSW</h2>
+    <div class="columns-2">
+        {% for club in collections.club %}
+            {% if club.data.tags.includes("NSW") %}
+                <p class=" text-2xl text-gray-900 mb-3">
+                    <a href="{{ club.website | url }}">
+                        {{ club.data.title }}
+                    </a>
+                </p>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <h2 class="font-bold text-3xl mb-6">VIC</h2>
+    <div class="columns-2">
+        {% for club in collections.club %}
+            {% if club.data.tags.includes("VIC") %}
+                <p class=" text-2xl text-gray-900 mb-3">
+                    <a href="{{ club.website | url }}">
+                        {{ club.data.title }}
+                    </a>
+                </p>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+</section> 
+

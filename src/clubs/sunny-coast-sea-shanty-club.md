@@ -6,6 +6,6 @@ description: Currently recruiting crew! We come together and sing songs of the
 website: https://www.facebook.com/SCShantyClub/
 date: 2022-09-27T02:57:53.882Z
 location: Bucking Seahorse
-state:
+tags:
   - QLD
 ---

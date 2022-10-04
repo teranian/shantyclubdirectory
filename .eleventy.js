@@ -53,6 +53,11 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
+  // Clubs by state category filter
+  eleventyConfig.addFilter("every", function (items = [], ...tags) {
+    return items.filter(item => tags.every(tag => item.data.tags.includes(tag)));
+  });
+
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
   return {
@@ -61,4 +66,5 @@ module.exports = function (eleventyConfig) {
     },
     htmlTemplateEngine: "njk",
   };
+
 };

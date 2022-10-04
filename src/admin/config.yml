@@ -27,11 +27,12 @@ collections:
       - { label: "Location", name: "location", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown", required: false }
       - widget: select
-        label: "state"
-        name: "state"
-        multiple: true
-        create: true
-        options: ["ACT", "NSW", "VIC", "QLD", "SA", "WA", "TAS", "NT", "NZ"]
+        label: "tags"
+        name: "tags"
+        multiple: false
+        create: false
+        options: ["ACT", "NSW", "VIC", "QLD", "SA", "WA", "TAS", "NT", "NZ", "club"]
+
   - label: "Settings"
     name: "settings"
     editor:

@@ -1,33 +1,32 @@
 ---
 layout: default
 prism: true
+title: Shanty Clubs Australia
 ---
 
 <div class="container max-w-4xl mx-auto p-6 ">
-    <h1 class="text-left bg-clip-text font-bold text-transparent bg-gradient-to-r from-blue-500 to-purple-500 my-8 ">
-        <a href="/" class="href"> 
-            
-            Shanty Clubs Australia
-           
-        </a>
-    </h1>
-    
+  <h1 class="text-left font-bold text-5xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 my-8">
+    <a href="/" class="">
+      Shanty Clubs Australia
+    </a>
+  </h1>
+
     <h2 class="font-bold lg:text-4xl text-2xl mb-4">{{title}}</h2>
 
     <p class="text-md font-bold text-gray-900 mb-8 lg:text-xl">{{ location }}</p>
 
-    <article class="prose lg:prose-xl">
+    <article class="prose lg:prose-2xl">
+            
+        <p class="text-xl text-gray-900 ">{{ description }}</p>
         
-    <p class="text-xl text-gray-900 ">{{ description }}</p>
-    
-    {% if website %}
-        <h3 class="mb-2">Website:</h3>
-        <a class=" text-gray-900 " href="{{website}}" target="_blank">{{ website }}</a>
-    {% endif %}
+        {% if website %}
+            <h3 class="mb-2">Website:</h3>
+            <a class=" text-gray-900 " href="{{website}}" target="_blank">{{ website }}</a>
+        {% endif %}
 
-    {% if content %}
-        <h3 class="">When:</h3>
-        {{ content | safe }}</article>
-    {% endif %}
-
+        {% if content %}
+            <h3 class="">When:</h3>
+            {{ content | safe }}
+        {% endif %}
+    </article>
 </div>

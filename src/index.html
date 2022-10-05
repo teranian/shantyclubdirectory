@@ -6,25 +6,15 @@ description: A directory of known Sea Shanty Clubs in Australia
 ---
 
 <div class="container max-w-4xl mx-auto p-6 ">
-  <h1 class="text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 my-8">
-    <a href="/" class="href"> 
-      <strong class="">
-        {{title}}
-      </strong>
+  <h1 class="text-left font-bold text-5xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 my-8">
+    <a href="/" class="">
+      {{title}}
     </a>
   </h1>
   <p class="text-xl">
-    Want your club listed or details updated? <a href="https://forms.gle/YZJVfNisBYjWTRJH8" class="text-md font-bold text-gray-900 mb-8 lg:text-xl">get in touch</a></p>
-  
-    {% include "./_includes/partials/clubslist.njk" %}
+    Want your club listed or details updated? <a href="https://forms.gle/YZJVfNisBYjWTRJH8" class="text-md font-bold text-gray-900 mb-8 lg:text-xl">get in touch</a>
+  </p>
 
-
-  {# {% for choir in quicklinks.links %}
-      <a href="{{item.url}}" target="" class="p-5 border rounded border-gray-200 hover:border-purple-400">
-          <h3>{{item.title}}
-              →</h3>
-          <p>{{item.desc}}</p>
-      </a>
-  {% endfor %} #}
+  {% include "./_includes/partials/clubslist.njk" %}
 
 </div>

@@ -5,15 +5,15 @@ path: home
 ---
 
 <div class="container max-w-4xl mx-auto p-6 ">
- <h1 class="text-left my-4">
+  <h1 class="text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 my-8">
     <a href="/" class="href"> 
-      <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 mt-5">
+      <strong class="">
         {{title}}
       </strong>
     </a>
   </h1>
 
-    {% include "./_includes/partials/clubslist.html" %}
+    {% include "./_includes/partials/clubslist.njk" %}
 
 
   {# {% for choir in quicklinks.links %}
